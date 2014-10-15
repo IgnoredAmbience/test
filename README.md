@@ -24,3 +24,5 @@ Delete me \n
 How about tabs? \t\t tabby good!
 
 Hmm. NUL? \0 oops...
+
+Carriage return? \r ok.

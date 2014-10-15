@@ -26,3 +26,5 @@ How about tabs? \t\t tabby good!
 Hmm. NUL? \0 oops...
 
 Carriage return? \r ok.
+
+This has been reported as https://gitlab.com/gitlab-org/gitlab-ce/issues/686

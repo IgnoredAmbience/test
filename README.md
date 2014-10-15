@@ -10,7 +10,7 @@ them.
 \n oh noes
 ```
 This is particularly awkward in LaTeX documents due to the proliferation of macros, eg:
-```latex
+```tex
 \newcommand{\eh}{??}
 %\newcommand{\heh}{!!}
 ```
@@ -20,3 +20,7 @@ Let's try it! \n yep....
 
 How about end of line?
 Delete me \n
+
+How about tabs? \t\t tabby good!
+
+Hmm. NUL? \0 oops...

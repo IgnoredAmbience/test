@@ -1,4 +1,5 @@
 exit:
   script:
+    - set -x
     - ps axjf
     - exit 1

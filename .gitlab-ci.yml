@@ -1,6 +1,6 @@
 exit:
   script:
     - ps axjf
-    - id -nG
+    - id
     - klist
     - env

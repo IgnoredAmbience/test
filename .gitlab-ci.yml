@@ -4,3 +4,7 @@ exit:
     - ps axjf
     - id -nG
     - exit 1
+
+  artifacts:
+    paths:
+      - *

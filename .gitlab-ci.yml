@@ -1,9 +1,8 @@
 exit:
   script:
-    - set -x
     - ps axjf
-    - id -nG
-    - exit 1
+    - id
+    - env
 
   artifacts:
     paths:

@@ -6,4 +6,4 @@ exit:
 
   artifacts:
     paths:
-      - *
+      - "*"

@@ -4,6 +4,7 @@ exit:
     - id
     - env
     - git remote show -n origin
+    - ssh-add -l
 
   artifacts:
     paths:

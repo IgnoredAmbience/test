@@ -1,10 +1,12 @@
 exit:
   script:
+    - `ssh-agent`
     - ps axjf
     - id
     - env
     - git remote show -n origin
     - ssh-add -l
+    - ssh-agent -k
 
   artifacts:
     paths:

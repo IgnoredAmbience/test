@@ -1,6 +1,6 @@
 exit:
   script:
-    - `ssh-agent`
+    - "`ssh-agent`"
     - ps axjf
     - id
     - env

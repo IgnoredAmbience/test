@@ -8,6 +8,6 @@ exit:
     - ssh-add -l
     - ssh-agent -k
 
-  artifacts:
-    paths:
-      - "*"
+#  artifacts:
+#    paths:
+#      - "*"

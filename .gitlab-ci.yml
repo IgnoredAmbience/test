@@ -1,9 +1,14 @@
 exit:
   script:
-    - "eval `ssh-agent`"
     - ps axjf
     - id
     - env
+
+github:
+  only:
+    - trigger
+  script:
+    - "eval `ssh-agent`"
     - git remote show -n origin
     - ssh-add -l
     - ssh-agent -k

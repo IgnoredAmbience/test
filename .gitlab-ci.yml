@@ -5,6 +5,7 @@ exit:
     - env
 
 github:
+  stage: sync
   only:
     - triggers
   script:

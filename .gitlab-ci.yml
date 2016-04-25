@@ -3,7 +3,7 @@ exit:
     - ps axjf
     - id
     - env
-    - git remote -n show origin
+    - git remote show -n origin
 
   artifacts:
     paths:

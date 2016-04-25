@@ -6,7 +6,7 @@ exit:
 
 github:
   only:
-    - trigger
+    - triggers
   script:
     - "eval `ssh-agent`"
     - git remote show -n origin

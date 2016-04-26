@@ -1,11 +1,16 @@
+.default: &default
+  exclude: &default_triggers
+  - triggers
+
 exit:
+  << *default
   script:
     - ps axjf
     - id
     - env
 
 github:
-  stage: sync
+  stage: deploy
   only:
     - triggers
   script:

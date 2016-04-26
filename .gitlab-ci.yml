@@ -1,9 +1,7 @@
-.default: &default
-  except: &default_triggers
+exit:
+  except:
     - triggers
 
-exit:
-  << *default
   script:
     - ps axjf
     - id

@@ -1,6 +1,6 @@
 .default: &default
-  exclude: &default_triggers
-  - triggers
+  except: &default_triggers
+    - triggers
 
 exit:
   << *default

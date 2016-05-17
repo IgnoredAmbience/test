@@ -9,7 +9,7 @@ git-sync:
   - eval `ssh-agent`
   - echo "$PUSH_KEY" | ssh-add -
   - ssh-add -L
-  - git sync-remote git@github.com:edgemaster/test.git
+  - git sync-remote git@github.com:edgemaster/test.git git@gitlab.doc.ic.ac.uk:tw1509/test.git
   - ssh-agent -k
   only:
   - triggers

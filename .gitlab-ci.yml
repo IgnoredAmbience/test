@@ -1,22 +1,16 @@
+---
 exit:
   except:
-    - triggers
-
+  - triggers
   script:
-    - ps axjf
-    - id
-    - env
-
-github:
-  stage: deploy
+  - ps axjf
+  - id
+  - env
+git-sync:
+  script:
+  - eval `ssh agent`
+  - echo $PUSH_KEY > ssh-add -
+  - git sync-remote git@github.com:edgemaster/test.git
+  - ssh-agent -k
   only:
-    - triggers
-  script:
-    - "eval `ssh-agent`"
-    - git remote show -n origin
-    - ssh-add -l
-    - ssh-agent -k
-
-#  artifacts:
-#    paths:
-#      - "*"
+  - triggers

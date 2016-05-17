@@ -7,7 +7,7 @@ exit:
 git-sync:
   script:
   - eval `ssh-agent`
-  - echo $PUSH_KEY > ssh-add -
+  - echo "$PUSH_KEY" | ssh-add -
   - ssh-add -L
   - git sync-remote git@github.com:edgemaster/test.git
   - ssh-agent -k

@@ -3,9 +3,7 @@ exit:
   except:
   - triggers
   script:
-  - ps axjf
-  - id
-  - env
+  - exit 0
 git-sync:
   script:
   - eval `ssh agent`

@@ -3,6 +3,7 @@ exit:
   except:
   - triggers
   script:
+  - env
   - exit 0
 git-sync:
   script:

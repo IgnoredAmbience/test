@@ -6,6 +6,7 @@ exit:
   - env
   - id
   - touch /vol/rr/gitlab-builds/test
+  - ps
   - exit 0
   tags:
   - auth-rr

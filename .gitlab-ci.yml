@@ -6,6 +6,8 @@ exit:
   - env
   - id
   - exit 0
+  tags:
+  - auth-rr
 
 git-sync:
   script:

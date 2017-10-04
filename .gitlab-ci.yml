@@ -3,7 +3,10 @@ exit:
   except:
   - triggers
   script:
+  - env
+  - id
   - exit 0
+
 git-sync:
   script:
   - eval `ssh-agent`
